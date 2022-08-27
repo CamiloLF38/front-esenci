@@ -1,0 +1,75 @@
+<app-header></app-header>
+
+<div class="container container-style">
+
+    <div class="row">
+
+        <div class="col-sm">
+            <h3>FRUTAS</h3>
+            <table class="table table-striped table-width">
+                <thead>
+                    <tr>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Libra</th>
+                        <th scope="col">Canastilla</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let fruta of listaFrutas">
+                        <td>{{ fruta.nombre }}</td>
+                        <td>{{ priceFormat(fruta.libra) }}</td>
+                        <td>{{ priceFormat(fruta.canastilla) }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-sm">
+            <h3>VERDURAS</h3>
+            <table class="table table-striped table-width">
+                <thead>
+                    <tr>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Libra</th>
+                        <th scope="col">Canastilla</th>
+                        <th scope="col">Bulto/Bolsa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let verdura of listaVerduras">
+                        <td>{{ verdura.nombre }}</td>
+                        <td>{{ priceFormat(verdura.libra) }}</td>
+                        <td>{{ priceFormat(verdura.canastilla) }}</td>
+                        <td>{{ priceFormat(verdura.bultoBolsa) }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-sm">
+            <h3>HORTALIZAS</h3>
+            <table class="table table-striped table-width">
+                <thead>
+                    <tr>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Unidad</th>
+                        <th scope="col">Atado</th>
+                        <th scope="col">Docena</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let hortaliza of listaHortalizas">
+                        <td>{{ hortaliza.nombre }}</td>
+                        <td>{{ priceFormat(hortaliza.unidad) }}</td>
+                        <td>{{ priceFormat(hortaliza.atado) }}</td>
+                        <td>{{ priceFormat(hortaliza.docena) }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</div>
+
+<app-footer></app-footer>

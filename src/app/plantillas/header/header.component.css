@@ -1,0 +1,14 @@
+.navbar-style{
+    background-color: #54A62B;
+    color: white;
+    font-weight: 400;
+}
+
+.text-style{
+    color: #F3E600;
+    font-style: italic;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+}

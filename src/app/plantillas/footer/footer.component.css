@@ -1,0 +1,21 @@
+img, svg {
+    filter: invert(100%);
+}
+
+ul li {
+    list-style: none;
+}
+
+.paddind-icons{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.margin-container{
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.titulos-footer{
+    padding-bottom: 15px;
+}

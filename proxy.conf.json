@@ -1,0 +1,6 @@
+{
+    "/dashboard": {
+        "target": "http://esenci.rf.gd",
+        "secure": false
+    }
+}
